@@ -35,9 +35,9 @@
             <a class= "nav-link text-white"data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"
               href="">More<i class="fas fa-caret-down"></i></a>
             <div class="drop dropdown-menu">
-              <a class="dropdown-item" href="">Home</a>
-              <a class="dropdown-item" href="">Artists</a>
-              <a class="dropdown-item" href="contacts.html">Contacts</a>
+              <a class="dropdown-item" href="index.html">Home</a>
+              <a class="dropdown-item" href="lista.html">Artists</a>
+              <a class="dropdown-item" href="">Contacts</a>
             </div>
           </li>
 
@@ -48,45 +48,57 @@
       </nav>
     </header>
 
-    <main class="principal row">
-      <section class="pet-activities col">
-        <div class="title row">
-          <div class="text-center  col-sm">
-            <h1>SYNTH FESTIVAL 2022</h1>
-            
-          </div>
-        </div>
-        <ul class="list row text-center p-0">
-          <li class="col-12 col-sm-4">
-            <div class="cont-hover">
-              <img src="img/festival.jpg" alt="festival">
-              <span class="esconder">
-                <h3>CONCERTS</h3>
-                <p>Worldwide Concerts</p>
-              </span>
-            </div>
-          </li>
-          <li class="col-12 col-sm-4">
-            <div class="cont-hover">
-              <img src="img/carpenter.jpg" alt="carpenter brut en concierto">
-              <span class="esconder">
-                <h3>ARTISTS</h3>
-                <p>Carpenter Brut</p>
-              </span>
-            </div>
-          </li>
-          <li class="col-12 col-sm-4">
-            <div class="cont-hover">
-              <img src="img/news.jpg" alt="tele retro">
-              <span class="esconder">
-                <h3>NEWS</h3>
-                <p>Latests news</p>
-              </span>
-            </div>
-          </li>
-        </ul>
-      </section>
-    </main>
+    <div class = "form-container">
+        <main class="row">
+            <form class = "formulario">
+                <h1>CONTACT</h1>
+                <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="inputEmail4">Email</label>
+                    <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="inputPassword4">Password</label>
+                    <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+                </div>
+                </div>
+                <div class="form-group">
+                <label for="inputAddress">Address</label>
+                <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                </div>
+                <div class="form-group">
+                <label for="inputAddress2">Address 2</label>
+                <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                </div>
+                <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="inputCity">City</label>
+                    <input type="text" class="form-control" id="inputCity">
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="inputState">State</label>
+                    <select id="inputState" class="form-control">
+                    <option selected>Choose...</option>
+                    <option>...</option>
+                    </select>
+                </div>
+                <div class="form-group col-md-2">
+                    <label for="inputZip">Zip</label>
+                    <input type="text" class="form-control" id="inputZip">
+                </div>
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlTextarea1">Send to us</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlFile1">Upload file</label>
+                    <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                </div>
+                <button type="submit" class="btn btn-primary">SEND</button>
+            </form>
+        </main>
+    </div>
   </div>
 
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
